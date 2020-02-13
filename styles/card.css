@@ -1,0 +1,41 @@
+html { font-size: 22px; background-color: rgb(221, 221, 221);}
+body { padding: 1rem; }
+
+.card {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px black;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+
+.my-contents
+{
+  border:1px solid black;
+  padding: 10px;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  
+}
